@@ -1,7 +1,7 @@
 //Setting Ids
 fullscreen      = 100004;
 showEnemyHealth = 100005;
-setting3        = 100006;
+bulletWrapping  = 100006;
 setting4        = 100007;
 
 //Default settings
@@ -15,8 +15,8 @@ switch(id)
     case showEnemyHealth: //Show enemy health bars
         enabled = true;
         break;
-    case setting3:        //Setting 3
-           
+    case bulletWrapping:        //Bullets wrap across the screen
+        enabled = true
         break;
     case setting4:        //Setting 4
           
@@ -37,8 +37,8 @@ runCheckbox = function()
             case showEnemyHealth: //Show enemy health bars
                 global.enemyHealthShown = true;
                 break;
-            case setting3:        //Setting 3
-                
+            case bulletWrapping:  //Bullets wrap across the screen
+                global.bulletScreenWrap = true;
                 break;
             case setting4:        //Setting 4
                 
@@ -57,8 +57,8 @@ runCheckbox = function()
             case showEnemyHealth: //Hide enemy health bars
                 global.enemyHealthShown = false;
                 break;
-            case setting3:        //Setting 3
-                
+            case bulletWrapping:  //Bullets don't wrap across the screen
+                global.bulletScreenWrap = false;
                 break;
             case setting4:        //Setting 4
                 

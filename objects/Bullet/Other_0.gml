@@ -1,2 +1,8 @@
-//instance_destroy();
-move_wrap(true, true, 0);
+if (global.bulletScreenWrap)
+{
+    move_wrap(true, true, 0);
+}
+else
+{
+    instance_destroy();
+}

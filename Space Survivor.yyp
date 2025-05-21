@@ -54,7 +54,6 @@
     {"id":{"name":"SpaceBackgroundSprite","path":"sprites/SpaceBackgroundSprite/SpaceBackgroundSprite.yy",},},
     {"id":{"name":"SpaceshipEngineOn","path":"sprites/SpaceshipEngineOn/SpaceshipEngineOn.yy",},},
     {"id":{"name":"SpaceshipEnginesOff","path":"sprites/SpaceshipEnginesOff/SpaceshipEnginesOff.yy",},},
-    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
     {"id":{"name":"UFOSprite","path":"sprites/UFOSprite/UFOSprite.yy",},},
     {"id":{"name":"UncheckedBox","path":"sprites/UncheckedBox/UncheckedBox.yy",},},
     {"id":{"name":"SpaceBackground","path":"tilesets/SpaceBackground/SpaceBackground.yy",},},
