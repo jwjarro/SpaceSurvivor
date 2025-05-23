@@ -17,6 +17,7 @@ image_yscale *= scale;
     acceleration = .05;
     maxSpeed = 7;
     
-
+//Health
+health = 2;
 
 
