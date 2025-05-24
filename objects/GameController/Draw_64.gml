@@ -20,8 +20,41 @@ if (global.showPlayerHealth)
 //Debug tools
 if (global.showDebug)
 {
-    //Number of enemies loaded
-    draw_text_ext_transformed(50, 50, "Enemies loaded: " + string(instance_number(Enemy_Parent)), 0, 500, 2, 2, 0);
-    //Number of bullets loaded
-    draw_text_ext_transformed(50, 75, "Bullets:        " + string(instance_number(Bullet)), 0, 500, 2, 2, 0);
+    //Debug printing function initialization
+        lineNum = 0;
+    
+        printDebugLine = function(text, indent = 0)
+        {
+            draw_text_ext_transformed(50 + 25 * indent, 50 + 25 * lineNum, text, 0, 500, 2, 2, 0);
+            lineNum ++;
+        }
+    
+    //Draw the debug screen
+    
+        //Entities
+            //Label
+            printDebugLine("Entities")
+        
+            //Number of enemies loaded
+            printDebugLine("Enemies loaded: " + string(instance_number(Enemy_Parent)), 1);
+        
+            //Number of bullets loaded
+            printDebugLine("Bullets:        " + string(instance_number(Bullet)), 1);
+        
+        //Player stats
+            //Label
+            printDebugLine("");
+            printDebugLine("Player stats");  
+         
+            //Position
+            printDebugLine("Position: (" + string(Player.x) + ", " + string(Player.y) + ")", 1);  
+          
+            //Momentum
+            printDebugLine("Momentum: (" + string(Player.xmomentum) + ", " + string(Player.ymomentum) + ")", 1);
+        
+            //Speed
+            printDebugLine("Speed: " + string(Player.speed), 1);
+        
+            //Health
+            printDebugLine("Health: " + string(health) + "/" + string(Player.maxHealth), 1);
 }
