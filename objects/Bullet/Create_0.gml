@@ -6,3 +6,6 @@ image_yscale *= scale;
 //Move
 speed = 10;
 direction = Player.angle;
+
+//Bullet lifespan
+alarm[0] = 200;

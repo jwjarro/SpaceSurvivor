@@ -1,4 +1,6 @@
 //Control enemies
+
+//Enemy movement
 with(Enemy_Parent)
 {
     //Make enemies move towards player
@@ -17,6 +19,17 @@ with(Enemy_Parent)
     depth = -y;
 }
 
-Player.depth = -Player.y;
-
-alarm[0] = alarmTime; //Reset alarm timer
+//Enemy loading/unloading
+    var viewx = camera_get_view_x(view_camera[0]);
+    var viewy = camera_get_view_y(view_camera[0]);
+    var vieww = camera_get_view_width(view_camera[0]);
+    var viewh = camera_get_view_height(view_camera[0]);
+    
+    enemyActvationBuffer = 128;
+    
+    instance_activate_region(viewx - enemyActvationBuffer, viewy - enemyActvationBuffer, vieww + enemyActvationBuffer, viewh + enemyActvationBuffer, true);
+    instance_deactivate_region(viewx - enemyActvationBuffer, viewy - enemyActvationBuffer, vieww + enemyActvationBuffer, viewh + enemyActvationBuffer, false, true);
+    instance_activate_object(PauseController);
+    instance_activate_object(Bullet);
+    
+alarm[0] = enemyControlInterval; //Reset alarm timer

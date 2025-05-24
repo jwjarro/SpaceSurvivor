@@ -1,8 +1,8 @@
 //Setting Ids
-fullscreen      = 100004;
-showEnemyHealth = 100005;
-bulletWrapping  = 100006;
-setting4        = 100007;
+fullscreen       = 100004;
+showEnemyHealth  = 100005;
+showPlayerHealth = 100006;
+debugMode        = 100007;
 
 //Default settings
 enabled = false;
@@ -15,11 +15,11 @@ switch(id)
     case showEnemyHealth: //Show enemy health bars
         enabled = true;
         break;
-    case bulletWrapping:        //Bullets wrap across the screen
-        enabled = true
+    case debugMode:        //Bullets wrap across the screen
+        enabled = false;
         break;
-    case setting4:        //Setting 4
-          
+    case showPlayerHealth:        //Show player health bar
+        enabled = true;
         break;
 }
 
@@ -37,11 +37,11 @@ runCheckbox = function()
             case showEnemyHealth: //Show enemy health bars
                 global.enemyHealthShown = true;
                 break;
-            case bulletWrapping:  //Bullets wrap across the screen
-                global.bulletScreenWrap = true;
+            case debugMode:  //Enable debug mode
+                global.showDebug = true;
                 break;
-            case setting4:        //Setting 4
-                
+            case showPlayerHealth:        //Show player health bar
+                global.showPlayerHealth = true;
                 break;
         }
     }
@@ -57,11 +57,11 @@ runCheckbox = function()
             case showEnemyHealth: //Hide enemy health bars
                 global.enemyHealthShown = false;
                 break;
-            case bulletWrapping:  //Bullets don't wrap across the screen
-                global.bulletScreenWrap = false;
+            case debugMode:  //Disable debug mode
+                global.showDebug = false;
                 break;
-            case setting4:        //Setting 4
-                
+            case showPlayerHealth:        //Hide player health bar
+                global.showPlayerHealth = false;
                 break;
         }	
     }

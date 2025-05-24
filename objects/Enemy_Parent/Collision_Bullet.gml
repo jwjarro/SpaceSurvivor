@@ -1,15 +1,3 @@
-currentHp --;
-
-
-if (currentHp = 0) //If now dead
-{
-    instance_destroy(); //Destroy enemy
-}
-else
-{
-    //Flash when hit
-    image_blend = flashColor;
-    alarm[0] = flashLength;
-}
+executeHit(); //Run on-hit code
 
 instance_destroy(other); //Destroy bullet

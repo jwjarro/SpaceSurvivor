@@ -26,9 +26,12 @@
         sprite_index = SpaceshipEngineOn;
     else
         sprite_index = SpaceshipEnginesOff;
+    
+    //Set depth
+    Player.depth = -Player.y;
 
-//Set screen wrapping
-move_wrap(true, true, 16);
+    //Set screen wrapping
+    move_wrap(true, true, 16);
 
 //Shooting
 

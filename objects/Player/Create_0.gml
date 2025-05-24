@@ -18,6 +18,7 @@ image_yscale *= scale;
     maxSpeed = 7;
     
 //Health
-health = 2;
+maxHealth = 10;
+health = maxHealth;
 
 
