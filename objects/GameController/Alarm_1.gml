@@ -7,5 +7,6 @@ var spawnx = Player.x + lengthdir_x(spawnRadius, dir);
 var spawny = Player.y + lengthdir_y(spawnRadius, dir);
 
 instance_create_layer(spawnx, spawny, "Instances", UFO);
+instance_create_layer(spawnx, spawny, "Instances", Carrier);
 
 alarm[1] = enemySpawnInterval;

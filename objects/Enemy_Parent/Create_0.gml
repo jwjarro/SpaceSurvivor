@@ -13,6 +13,7 @@ move_wrap(true, true, 16);
     flankingDistance = 64;
     flankingOffset = 64;
     playerCollisionRebound = 10;
+    isDirectional = false;
 
     //Health
     maxHp = 1;
