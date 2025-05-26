@@ -22,3 +22,22 @@ maxHealth = 10;
 health = maxHealth;
 
 
+collisionRebound = function(object)
+{
+    with(object)
+    {
+        direction = point_direction(Player.x, Player.y, x, y);
+        speed = playerCollisionRebound;
+    }
+
+}
+
+executeHit = function()
+{
+    health--;
+    xmomentum = 0;
+    ymomentum = 0;
+    
+    collisionRebound(Enemy_Parent);
+    collisionRebound(EnemyBullet);
+}

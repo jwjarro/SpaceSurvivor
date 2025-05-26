@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Bullet",
+  "%Name":"EnemyBullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"EnemyBullet","path":"objects/EnemyBullet/EnemyBullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Bullet",
+  "name":"EnemyBullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SimpleBullet",
-    "path":"sprites/SimpleBullet/SimpleBullet.yy",
+    "name":"EneemyBulletSprite",
+    "path":"sprites/EneemyBulletSprite/EneemyBulletSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

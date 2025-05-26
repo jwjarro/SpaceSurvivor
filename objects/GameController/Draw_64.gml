@@ -35,11 +35,14 @@ if (global.showDebug)
             //Label
             printDebugLine("Entities")
         
+            //Number of instances loaded
+            printDebugLine("Instances loaded: " + string(instance_count), 1);
+    
             //Number of enemies loaded
             printDebugLine("Enemies loaded: " + string(instance_number(Enemy_Parent)), 1);
         
             //Number of bullets loaded
-            printDebugLine("Bullets:        " + string(instance_number(Bullet)), 1);
+            printDebugLine("Bullets:        " + string(instance_number(Bullet) + instance_number(EnemyBullet)), 1);
         
         //Player stats
             //Label

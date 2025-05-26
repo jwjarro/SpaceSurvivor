@@ -1,3 +1,1 @@
-health--;
-xmomentum = 0;
-ymomentum = 0;
+executeHit();
