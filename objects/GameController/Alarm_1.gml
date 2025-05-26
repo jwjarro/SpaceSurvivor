@@ -1,12 +1,23 @@
 //Spawn enemies
+for(i = 1; i < array_length(waveData[currentWave]); i ++)
+{
+    for (j = 0; j < waveData[currentWave][i]; j ++)
+    {
+        switch(i)
+        {
+            case 1:
+                spawnEnemy(UFO);
+                break;
+            case 2:
+                spawnEnemy(Carrier);
+                break;
+        }
+    }
+}
 
-spawnRadius = 32 + camera_get_view_width(view_camera[0])/2;
-
-var dir = random_range(0, 360);
-var spawnx = Player.x + lengthdir_x(spawnRadius, dir);
-var spawny = Player.y + lengthdir_y(spawnRadius, dir);
-
-instance_create_layer(spawnx, spawny, "Instances", UFO);
-instance_create_layer(spawnx, spawny, "Instances", Carrier);
+if ((getTime() - previousWaveTimeElapsed > timeToWave) && (currentWave < array_length(waveData)))
+{
+    incrementWave();
+}
 
 alarm[1] = enemySpawnInterval;

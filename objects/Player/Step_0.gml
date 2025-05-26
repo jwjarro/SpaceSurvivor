@@ -9,10 +9,24 @@
     var vert_in = up_in - down_in;
     var hor_in = left_in - right_in;
     
-    //Adjust angle and momentum
+    //Adjust angle
     angle += hor_in * angleSpeed;
-    xmomentum += vert_in * acceleration * cos(pi*angle/180);
-    ymomentum -= vert_in * acceleration * sin(pi*angle/180);
+
+    //Adjust x momentum
+    if (abs(xmomentum) < maxSpeed)
+        xmomentum += vert_in * acceleration * cos(pi*angle/180);
+    else if (xmomentum >= maxSpeed)
+        xmomentum -= abs(vert_in) * breakingAssist;
+    else
+    	xmomentum += abs(vert_in) * breakingAssist;
+
+    //Adjust y momentum
+    if (abs(ymomentum) < maxSpeed)
+        ymomentum -= vert_in * acceleration * sin(pi*angle/180);
+    else if (ymomentum >= maxSpeed)
+        ymomentum -= abs(vert_in) * breakingAssist;
+    else 
+    	ymomentum += abs(vert_in) * breakingAssist;
     
     //Move character
     direction = point_direction(0,0,xmomentum,ymomentum);

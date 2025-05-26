@@ -60,4 +60,14 @@ if (global.showDebug)
         
             //Health
             printDebugLine("Health: " + string(health) + "/" + string(Player.maxHealth), 1);
+        
+        //Waves
+            //Label
+            printDebugLine("Waves");
+            
+            //Wave number
+            printDebugLine("Wave #" + string(currentWave), 1);
+    
+            //Run time
+            printDebugLine("Run time: " + string(getTime()), 1);
 }
