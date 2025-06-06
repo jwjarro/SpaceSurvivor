@@ -16,7 +16,7 @@ switch(id)
         enabled = true;
         break;
     case debugMode:        //Bullets wrap across the screen
-        enabled = true;
+        enabled = false;
         break;
     case showPlayerHealth:        //Show player health bar
         enabled = true;

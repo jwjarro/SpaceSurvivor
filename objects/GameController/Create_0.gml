@@ -21,9 +21,9 @@ alarm[0] = enemyControlInterval;
     
     //Wave setup
         waveData = [ //Format: [wave_length, #UFOs, #Carriers],
-        [50, 0, 0],
-        [20, 1, 0],
-        [20, 0, 1]
+        [10, 0, 0],
+        [60, 1, 0],
+        [10, 0, 1]
         ]
         
         currentWave = 0;

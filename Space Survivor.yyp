@@ -48,6 +48,7 @@
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"UFO","path":"objects/UFO/UFO.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"ButtonBackground_1","path":"sprites/ButtonBackground_1/ButtonBackground_1.yy",},},
     {"id":{"name":"CarrierSprite","path":"sprites/CarrierSprite/CarrierSprite.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"SpaceBackgroundSprite","path":"sprites/SpaceBackgroundSprite/SpaceBackgroundSprite.yy",},},
     {"id":{"name":"SpaceshipEngineOn","path":"sprites/SpaceshipEngineOn/SpaceshipEngineOn.yy",},},
     {"id":{"name":"SpaceshipEnginesOff","path":"sprites/SpaceshipEnginesOff/SpaceshipEnginesOff.yy",},},
+    {"id":{"name":"ThatOneStudioSprite","path":"sprites/ThatOneStudioSprite/ThatOneStudioSprite.yy",},},
     {"id":{"name":"UFOSprite","path":"sprites/UFOSprite/UFOSprite.yy",},},
     {"id":{"name":"UncheckedBox","path":"sprites/UncheckedBox/UncheckedBox.yy",},},
     {"id":{"name":"SpaceBackground","path":"tilesets/SpaceBackground/SpaceBackground.yy",},},
@@ -67,6 +69,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
