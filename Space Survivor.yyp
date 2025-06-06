@@ -46,10 +46,12 @@
     {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},},
     {"id":{"name":"PauseController","path":"objects/PauseController/PauseController.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"SplashScreenController","path":"objects/SplashScreenController/SplashScreenController.yy",},},
     {"id":{"name":"UFO","path":"objects/UFO/UFO.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"Sequence1","path":"sequences/Sequence1/Sequence1.yy",},},
     {"id":{"name":"ButtonBackground_1","path":"sprites/ButtonBackground_1/ButtonBackground_1.yy",},},
     {"id":{"name":"CarrierSprite","path":"sprites/CarrierSprite/CarrierSprite.yy",},},
     {"id":{"name":"CheckedBox","path":"sprites/CheckedBox/CheckedBox.yy",},},
@@ -68,8 +70,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
