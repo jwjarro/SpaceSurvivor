@@ -68,6 +68,9 @@ if (global.showDebug)
             //Wave number
             printDebugLine("Wave #" + string(currentWave), 1);
     
-            //Run time
-            printDebugLine("Run time: " + string(getTime()), 1);
+            //Game time
+            printDebugLine("Game time: " + string(getTime()), 1);
+    
+            //Room time
+            printDebugLine("Room time: " + string(timeSinceRoomStart()), 1);
 }

@@ -27,20 +27,27 @@ alarm[0] = enemyControlInterval;
         ]
         
         currentWave = 0;
-        previousWaveTimeElapsed = 0;
-        timeToWave = waveData[currentWave][0];
         
         incrementWave = function()
         {
-            previousWaveTimeElapsed += waveData[currentWave][0];
             currentWave ++;
-            timeToWave = waveData[currentWave][0];
         }
-        
-        getTime = function()
-        {
-            return get_timer() / 1000000;
-        }
+     
+//Debug
+
+    //Time
+   
+    getTime = function()
+    {
+        return get_timer() / 1000000;
+    }
+
+    roomStartTime = getTime();
+
+    timeSinceRoomStart = function()
+    {
+        return getTime() - roomStartTime;
+    }
 
 //Set sprite scale
 global.scale = 3;

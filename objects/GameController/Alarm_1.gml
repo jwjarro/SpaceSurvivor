@@ -15,9 +15,4 @@ for(i = 1; i < array_length(waveData[currentWave]); i ++)
     }
 }
 
-if ((getTime() - previousWaveTimeElapsed - PauseController.timePaused > timeToWave) && (currentWave < array_length(waveData) - 1))
-{
-    incrementWave();
-}
-
 alarm[1] = enemySpawnInterval;
