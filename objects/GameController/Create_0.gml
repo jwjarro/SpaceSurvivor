@@ -32,6 +32,11 @@ alarm[0] = enemyControlInterval;
         {
             currentWave ++;
         }
+
+    //Level setup
+        global.levelData = [
+            10, 10, 10
+        ]
      
 //Debug
 

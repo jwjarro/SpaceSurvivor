@@ -13,8 +13,8 @@
   "isDnd":false,
   "layers":[
     {"$GMREffectLayer":"","%Name":"ScreenShakeEffectlayer","depth":0,"effectEnabled":true,"effectType":"_filter_screenshake","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ScreenShakeEffectlayer","properties":[
-        {"name":"g_Magnitude","type":0,"value":"2",},
-        {"name":"g_ShakeSpeed","type":0,"value":"1",},
+        {"name":"g_Magnitude","type":0,"value":"1.5",},
+        {"name":"g_ShakeSpeed","type":0,"value":"1.5",},
         {"name":"g_NoiseTexture","type":2,"value":"_filter_screenshake_noise",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRAssetLayer":"","%Name":"WaveAssetLayer","assets":[

@@ -23,7 +23,10 @@ maxHealth = 10;
 health = maxHealth;
 
 //XP
-xpCollected = 0;
+totalXP = 0;
+levelXP = 0;
+level = 0;
+xpNeeded = global.levelData[level];
 
 
 collisionRebound = function(object)

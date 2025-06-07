@@ -5,7 +5,7 @@ draw_healthbar
     pHealthbarWidth * view_hport, 
     view_wport, 
     (pHealthbarWidth + xpBarWidth) * view_hport + 16, 
-    100 * (Player.xpCollected/100),
+    100 * (Player.levelXP/Player.xpNeeded),
     c_black,
     c_orange,
     c_orange,
