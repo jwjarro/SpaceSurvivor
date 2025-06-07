@@ -51,3 +51,11 @@ alarm[0] = enemyControlInterval;
 
 //Set sprite scale
 global.scale = 3;
+
+//UI variables
+
+    //Healthbar
+    pHealthbarWidth = 0.03;
+
+    //xp bar
+    xpBarWidth = pHealthbarWidth/2;

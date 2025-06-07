@@ -1,7 +1,7 @@
 //Setting Ids
 fullscreen       = 100004;
 showEnemyHealth  = 100005;
-showPlayerHealth = 100006;
+doScreenShake    = 100006;
 debugMode        = 100007;
 
 //Default settings
@@ -18,7 +18,7 @@ switch(id)
     case debugMode:        //Bullets wrap across the screen
         enabled = true;
         break;
-    case showPlayerHealth:        //Show player health bar
+    case doScreenShake:    //Enable screen shake
         enabled = true;
         break;
 }
@@ -40,8 +40,8 @@ runCheckbox = function()
             case debugMode:  //Enable debug mode
                 global.showDebug = true;
                 break;
-            case showPlayerHealth:        //Show player health bar
-                global.showPlayerHealth = true;
+            case doScreenShake:        //Enable screen shake
+                global.doScreenShake = true;
                 break;
         }
     }
@@ -60,8 +60,9 @@ runCheckbox = function()
             case debugMode:  //Disable debug mode
                 global.showDebug = false;
                 break;
-            case showPlayerHealth:        //Hide player health bar
-                global.showPlayerHealth = false;
+            case doScreenShake:        //Disable screen shake
+                global.doScreenShake = false;
+                layer_set_visible("ScreenShakeEffectLayer", false);
                 break;
         }	
     }

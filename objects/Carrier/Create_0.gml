@@ -7,6 +7,7 @@ currentHp = maxHp;
 walkSpeed = 0.5;
 isDirectional = true;
 fireRate = 180;
+xpDropped = 0;
 
 alarm[11] = fireRate;
 

@@ -19,6 +19,10 @@ move_wrap(true, true, 16);
     maxHp = 1;
     currentHp = maxHp;
 
+    //xp
+    xpDropped = 2;
+    xpOffset = 2;
+
     //Flash when hit
     flashColor = c_red;
     flashLength = 10;
@@ -29,7 +33,16 @@ executeHit = function()
     
     if (currentHp = 0) //If now dead
     {
-        instance_destroy(); //Destroy enemy
+        //Drop xp
+        for (i = 0; i < xpDropped; i++)
+        {
+            dropDirection = random_range(0, 360);
+            instance_create_layer(x + xpOffset * cos(dropDirection) * scale, y + xpOffset * sin(dropDirection) * scale, "Instances", XP, {
+                direction, speed});
+        }
+        
+        //Destroy enemy
+        instance_destroy();
     }
     else
     {

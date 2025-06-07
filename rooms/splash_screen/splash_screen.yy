@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_5B17833F","path":"rooms/splash_screen/splash_screen.yy",},
     {"name":"SettingsInstance","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"QuitInstance","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"ResumeInstance","path":"roomui/RoomUI/RoomUI.yy",},
@@ -14,7 +15,6 @@
     {"name":"inst_41D498E9","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_46127E43","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_565D8B7C","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_5B17833F","path":"rooms/splash_screen/splash_screen.yy",},
   ],
   "isDnd":false,
   "layers":[

@@ -22,6 +22,9 @@ image_yscale *= scale;
 maxHealth = 10;
 health = maxHealth;
 
+//XP
+xpCollected = 0;
+
 
 collisionRebound = function(object)
 {

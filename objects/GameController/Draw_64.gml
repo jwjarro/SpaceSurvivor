@@ -1,21 +1,36 @@
+//Draw xp bar
+draw_healthbar
+(
+    0, 
+    pHealthbarWidth * view_hport, 
+    view_wport, 
+    (pHealthbarWidth + xpBarWidth) * view_hport + 16, 
+    100 * (Player.xpCollected/100),
+    c_black,
+    c_orange,
+    c_orange,
+    0,
+    false,
+    false
+);
+
 //Draw player health bar
-if (global.showPlayerHealth)
-{
-    draw_healthbar
-    (
-        0, 
-        0, 
-        view_wport, 
-        .03 * view_hport, 
-        100 * (health/Player.maxHealth),
-        c_black,
-        c_red,
-        c_green,
-        0,
-        false,
-        false
-    );
-}
+draw_healthbar
+(
+    0, 
+    0, 
+    view_wport, 
+    pHealthbarWidth * view_hport, 
+    100 * (health/Player.maxHealth),
+    c_black,
+    c_red,
+    c_green,
+    0,
+    false,
+    false
+);
+
+
 
 //Debug tools
 if (global.showDebug)
@@ -43,11 +58,17 @@ if (global.showDebug)
         
             //Number of bullets loaded
             printDebugLine("Bullets:        " + string(instance_number(Bullet) + instance_number(EnemyBullet)), 1);
+    
+            //Number of xp loaded
+            printDebugLine("XP:             " + string(instance_number(XP)), 1);
         
         //Player stats
             //Label
             printDebugLine("");
-            printDebugLine("Player stats");  
+            printDebugLine("Player stats"); 
+    
+            //Angle
+            printDebugLine("Angle: " + string(Player.angle), 1); 
          
             //Position
             printDebugLine("Position: (" + string(Player.x) + ", " + string(Player.y) + ")", 1);  

@@ -11,6 +11,7 @@
     
     //Adjust angle
     angle += hor_in * angleSpeed;
+    angle %= 360; //-360 < angle < +360
 
     //Adjust x momentum
     if (abs(xmomentum) < maxSpeed)
@@ -47,6 +48,15 @@
     //Set screen wrapping
     move_wrap(true, true, 16);
 
+    //Set screen shake
+    if (global.doScreenShake)
+    {
+        if (vert_in == 0)
+            layer_set_visible("ScreenShakeEffectLayer", false);
+        else 
+        	layer_set_visible("ScreenShakeEffectLayer", true);
+    }
+    
 //Shooting
 
      if keyboard_check_pressed(vk_space)
