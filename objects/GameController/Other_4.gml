@@ -33,3 +33,5 @@ view_set_visible(1, false);
         }
     }
 
+//Music
+audio_play_sound(SolarExpedition, 100, true)
