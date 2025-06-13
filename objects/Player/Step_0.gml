@@ -14,8 +14,18 @@
     {
         gp = global.activeGamepad;
         
-        vert_in -= round(gamepad_axis_value(gp, gp_axislv));
-        hor_in -= round(gamepad_axis_value(gp, gp_axisrh));
+        switch (global.controllerType)
+        {
+            case "Xbox":
+                vert_in -= round(gamepad_axis_value(gp, gp_axislv));
+                hor_in -= round(gamepad_axis_value(gp, gp_axisrh));
+                break;
+            
+            case "Hotas":
+                vert_in -= round(gamepad_axis_value(gp, gp_axisrh));
+                hor_in -= round(gamepad_axis_value(gp, gp_axislh));
+                break;
+        }
         
         clamp(vert_in, -1, 1);
         clamp(hor_in, -1, 1);
@@ -71,7 +81,28 @@
     
 //Shooting
 
-     if (keyboard_check_pressed(vk_space) || (global.controllerConnected && gamepad_button_check_pressed(gp, gp_shoulderrb))) 
+if (global.controllerConnected)
+{
+    var shootButton;
+    
+    switch (global.controllerType)
+    {
+        case "Xbox":
+            shootButton = gp_shoulderrb;
+            break;
+        
+        case "Hotas":
+            shootButton = gp_face1;
+            break;
+    }
+    
+    if (keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(gp, shootButton))) 
     {
         instance_create_layer(x,y,"Instances", Bullet);
     }
+    
+}
+else if (keyboard_check_pressed(vk_space))
+{
+    instance_create_layer(x,y,"Instances", Bullet);
+}

@@ -84,6 +84,7 @@ if (global.showDebug)
         
         //Waves
             //Label
+            printDebugLine();
             printDebugLine("Waves");
             
             //Wave number
@@ -101,5 +102,9 @@ if (global.showDebug)
             printDebugLine("Controllers");
     
             //# of controllers connected
-            printDebugLine("Controllers connected: " + string(array_length(global.gamepads)));
+            printDebugLine("Controllers connected: " + string(array_length(global.gamepads)), 1);
+    
+            //Controller description
+            if (global.controllerConnected)
+                printDebugLine("Controller description: " + gamepad_get_description(global.activeGamepad), 1);
 }
