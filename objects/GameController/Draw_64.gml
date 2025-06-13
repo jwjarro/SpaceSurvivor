@@ -38,7 +38,7 @@ if (global.showDebug)
     //Debug printing function initialization
         lineNum = 0;
     
-        printDebugLine = function(text, indent = 0)
+        printDebugLine = function(text = "", indent = 0)
         {
             draw_text_ext_transformed(50 + 25 * indent, 50 + 25 * lineNum, text, 0, 500, 2, 2, 0);
             lineNum ++;
@@ -64,7 +64,7 @@ if (global.showDebug)
         
         //Player stats
             //Label
-            printDebugLine("");
+            printDebugLine();
             printDebugLine("Player stats"); 
     
             //Angle
@@ -94,4 +94,12 @@ if (global.showDebug)
     
             //Room time
             printDebugLine("Room time: " + string(timeSinceRoomStart()), 1);
+    
+        //Controllers
+            //Label
+            printDebugLine();
+            printDebugLine("Controllers");
+    
+            //# of controllers connected
+            printDebugLine("Controllers connected: " + string(array_length(global.gamepads)));
 }

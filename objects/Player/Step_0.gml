@@ -8,6 +8,18 @@
     
     var vert_in = up_in - down_in;
     var hor_in = left_in - right_in;
+
+    //Get controller inputs
+    if (global.controllerConnected)
+    {
+        gp = global.activeGamepad;
+        
+        vert_in -= round(gamepad_axis_value(gp, gp_axislv));
+        hor_in -= round(gamepad_axis_value(gp, gp_axisrh));
+        
+        clamp(vert_in, -1, 1);
+        clamp(hor_in, -1, 1);
+    }
     
     //Adjust angle
     angle += hor_in * angleSpeed;
@@ -59,7 +71,7 @@
     
 //Shooting
 
-     if keyboard_check_pressed(vk_space)
+     if (keyboard_check_pressed(vk_space) || (global.controllerConnected && gamepad_button_check_pressed(gp, gp_shoulderrb))) 
     {
         instance_create_layer(x,y,"Instances", Bullet);
     }
