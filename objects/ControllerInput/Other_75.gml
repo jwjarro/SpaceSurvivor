@@ -19,16 +19,19 @@ else
 
 global.controllerConnected = (global.activeGamepad != undefined);
 
-switch(gamepad_get_description(global.activeGamepad))
+if (global.controllerConnected)
 {
-    case "T.Flight Hotas One":
-        global.controllerType = "Hotas";
-        break;
-    
-    case "XInput STANDARD GAMEPAD":
-        global.controllerType = "Xbox";
-        break;
-    
-    default:
-        global.controllerType = "Not Recognized";
+    switch(gamepad_get_description(global.activeGamepad))
+    {
+        case "T.Flight Hotas One":
+            global.controllerType = "Hotas";
+            break;
+        
+        case "XInput STANDARD GAMEPAD":
+            global.controllerType = "Xbox";
+            break;
+        
+        default:
+            global.controllerType = "Not Recognized";
+    }
 }
