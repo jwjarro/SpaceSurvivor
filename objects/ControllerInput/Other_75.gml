@@ -34,4 +34,10 @@ if (global.controllerConnected)
         default:
             global.controllerType = "Not Recognized";
     }
+    
+    
+
 }
+
+
+
