@@ -40,6 +40,7 @@
     {"id":{"name":"AnimationCurve1","path":"animcurves/AnimationCurve1/AnimationCurve1.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},},
+    {"id":{"name":"Button_1","path":"objects/Button_1/Button_1.yy",},},
     {"id":{"name":"Button","path":"objects/Button/Button.yy",},},
     {"id":{"name":"Carrier","path":"objects/Carrier/Carrier.yy",},},
     {"id":{"name":"Checkbox","path":"objects/Checkbox/Checkbox.yy",},},
