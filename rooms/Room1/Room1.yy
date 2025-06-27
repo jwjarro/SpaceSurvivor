@@ -10,14 +10,6 @@
     {"name":"inst_3613F8E5","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_258D7693","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7E600637","path":"rooms/Room1/Room1.yy",},
-    {"name":"SettingsInstance","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"QuitInstance","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"ResumeInstance","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"BackInstance","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_2A647A96","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_41D498E9","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_46127E43","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_565D8B7C","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -26,9 +18,7 @@
         {"name":"g_ShakeSpeed","type":0,"value":"1.5",},
         {"name":"g_NoiseTexture","type":2,"value":"_filter_screenshake_noise",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
-    {"$GMRAssetLayer":"","%Name":"WaveAssetLayer","assets":[
-        {"$GMRSequenceGraphic":"v1","%Name":"graphic_146366C8","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_146366C8","resourceType":"GMRSequenceGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"sequenceId":{"name":"WaveSequence","path":"sequences/WaveSequence/WaveSequence.yy",},"x":448.0,"y":1408.0,},
-      ],"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"WaveAssetLayer","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRAssetLayer":"","%Name":"WaveAssetLayer","assets":[],"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"WaveAssetLayer","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_353DB9AD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_353DB9AD","objectId":{"name":"GameController","path":"objects/GameController/GameController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_3613F8E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3613F8E5","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":50000.0,"y":50000.0,},

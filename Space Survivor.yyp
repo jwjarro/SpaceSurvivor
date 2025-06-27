@@ -58,7 +58,6 @@
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Gamepad_Vars","path":"scripts/Gamepad_Vars/Gamepad_Vars.yy",},},
     {"id":{"name":"SplashScreenSequence","path":"sequences/SplashScreenSequence/SplashScreenSequence.yy",},},
-    {"id":{"name":"WaveSequence","path":"sequences/WaveSequence/WaveSequence.yy",},},
     {"id":{"name":"CountdownSFX","path":"sounds/CountdownSFX/CountdownSFX.yy",},},
     {"id":{"name":"HighEnergySolarExpedition","path":"sounds/HighEnergySolarExpedition/HighEnergySolarExpedition.yy",},},
     {"id":{"name":"RocketLaunchSFX","path":"sounds/RocketLaunchSFX/RocketLaunchSFX.yy",},},
@@ -83,8 +82,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

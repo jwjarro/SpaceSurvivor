@@ -1,31 +1,9 @@
-////Setting Ids
-//fullscreen       = 100004;
-//showEnemyHealth  = 100005;
-//doScreenShake    = 100006;
-//"Debug Mode"        = 100007;
-
 //Default settings
 enabled = false;
 
-//switch(id)
-//{
-    //case "Fullscreen":      //Fullscreen
-        //enabled = true;
-        //break;
-    //case showEnemyHealth: //Show enemy health bars
-        //enabled = true;
-        //break;
-    //case "Debug Mode":        //Bullets wrap across the screen
-        //enabled = true;
-        //break;
-    //case"Screen Shake":    //Enable screen shake
-        //enabled = true;
-        //break;
-//}
-
 switch(checkbox_name)
 {
-    case "Fullscreen":      //Fullscreen
+    case "Fullscreen":        //Fullscreen
         enabled = true;
         break;
     case "Show Enemy Health": //Show enemy health bars
@@ -34,12 +12,15 @@ switch(checkbox_name)
     case "Debug Mode":        //Bullets wrap across the screen
         enabled = true;
         break;
-    case"Screen Shake":    //Enable screen shake
+    case "Screen Shake":       //Enable screen shake
+        enabled = true;
+        break;
+	case "Audio":              //Enable audio
         enabled = true;
         break;
 }
 
-
+//Define checkbox actions
 runCheckbox = function()
 {
     if (enabled) //If te setting is enabled
@@ -48,17 +29,21 @@ runCheckbox = function()
         
         switch(checkbox_name)
         {
-            case "Fullscreen":      //Fullscreen
+            case "Fullscreen":                  //Fullscreen
                 window_set_fullscreen(true);
                 break;
-            case "Show Enemy Health": //Show enemy health bars
+            case "Show Enemy Health":           //Show enemy health bars
                 global.enemyHealthShown = true;
                 break;
-            case "Debug Mode":  //Enable debug mode
+            case "Debug Mode":                  //Enable debug mode
                 global.showDebug = true;
                 break;
-            case"Screen Shake":        //Enable screen shake
+            case "Screen Shake":                //Enable screen shake
                 global.doScreenShake = true;
+                break;
+			case "Audio":                       //Enable audio
+                global.audioEnabled = true;
+				audio_resume_all();
                 break;
         }
     }
@@ -68,18 +53,22 @@ runCheckbox = function()
         
         switch(checkbox_name)
         {
-            case "Fullscreen":      //Not fullscreen
+            case "Fullscreen":                  //Not fullscreen
                 window_set_fullscreen(false);
                 break;
-            case "Show Enemy Health": //Hide enemy health bars
+            case "Show Enemy Health":            //Hide enemy health bars
                 global.enemyHealthShown = false;
                 break;
-            case "Debug Mode":  //Disable debug mode
+            case "Debug Mode":                   //Disable debug mode
                 global.showDebug = false;
                 break;
-            case"Screen Shake":        //Disable screen shake
+            case "Screen Shake":                 //Disable screen shake
                 global.doScreenShake = false;
                 layer_set_visible("ScreenShakeEffectLayer", false);
+                break;
+			case "Audio":                        //Disable audio
+                global.audioEnabled = false;
+				audio_pause_all();
                 break;
         }	
     }

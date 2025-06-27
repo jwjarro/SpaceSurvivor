@@ -95,6 +95,9 @@ if (global.showDebug)
     
             //Room time
             printDebugLine("Room time: " + string(timeSinceRoomStart()), 1);
+			
+			//Room time
+            printDebugLine("Round time: " + string(global.roundTimeSeconds), 1);
     
         //Controllers
             //Label
