@@ -1,1 +1,1 @@
-PauseController.executePauseScreenButton(id);
+PauseController.executePauseScreenButton(button_name);
