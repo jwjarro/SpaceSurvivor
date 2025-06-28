@@ -34,4 +34,4 @@ view_set_visible(1, false);
     }
 
 //Music
-audio_play_sound(HighEnergySolarExpedition, 100, true)
+audio_play_sound(LQuaLeshkholit, 100, true)
