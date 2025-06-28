@@ -10,7 +10,7 @@ switch(checkbox_name)
         enabled = true;
         break;
     case "Debug Mode":        //Enable Debug mode
-        enabled = true;
+        enabled = false;
         break;
     case "Screen Shake":      //Enable screen shake
         enabled = true;
