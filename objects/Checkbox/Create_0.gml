@@ -9,13 +9,13 @@ switch(checkbox_name)
     case "Show Enemy Health": //Show enemy health bars
         enabled = true;
         break;
-    case "Debug Mode":        //Bullets wrap across the screen
+    case "Debug Mode":        //Enable Debug mode
         enabled = true;
         break;
-    case "Screen Shake":       //Enable screen shake
+    case "Screen Shake":      //Enable screen shake
         enabled = true;
         break;
-	case "Audio":              //Enable audio
+	case "Audio":             //Enable audio
         enabled = true;
         break;
 }
