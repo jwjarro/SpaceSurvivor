@@ -31,12 +31,15 @@ updatePause = function()
     {
         instance_deactivate_all(true);
         layer_set_visible(pauseLayer, true);
+		window_set_cursor(cr_default);
+		
     }
     else
     { 
         instance_activate_all(); 
         layer_set_visible(pauseLayer, false); 
         layer_set_visible(settingsLayer, false);
+		window_set_cursor(cr_none);
     }
 }
 
