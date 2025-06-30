@@ -49,3 +49,6 @@ executeHit = function()
     collisionRebound(Enemy_Parent);
     collisionRebound(EnemyBullet);
 }
+
+//Hide loading animation
+//LoadingAnimationController.visible = false;
