@@ -111,5 +111,4 @@ if (global.showDebug)
             if (global.controllerConnected)
                 printDebugLine("Controller description: " + gamepad_get_description(global.activeGamepad), 1);
     
-    show_debug_message(string(PauseController.activeButton));
 }

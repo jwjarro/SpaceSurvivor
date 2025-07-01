@@ -44,9 +44,6 @@ if (global.controllerConnected)
             global.controllerType = "Not Recognized";
             global.pauseStick = gp_axislv;
     }
-    
-    //Configure pause screen
-    PauseController.activeButtonNum = 0;
 
 }
 
