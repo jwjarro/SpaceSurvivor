@@ -1,7 +1,9 @@
-paused = false;
+var paused = false;
+var upgrading = false;
 
 pauseLayer = "PauseLayer";
 settingsLayer = "SettingsLayer";
+upgradeLayer = "UpgradeLayer";
 
 activeButtonNum = undefined;
 
@@ -30,8 +32,15 @@ updatePause = function()
     if (paused)
     {
         instance_deactivate_all(true);
-        layer_set_visible(pauseLayer, true);
 		window_set_cursor(cr_default);
+		if (upgrading)
+		{
+			layer_set_visible(upgradeLayer, true);
+		}
+		else
+		{
+			layer_set_visible(pauseLayer, true);
+		}
 		
     }
     else

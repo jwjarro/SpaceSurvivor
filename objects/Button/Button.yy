@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ButtonBackground_1",
-    "path":"sprites/ButtonBackground_1/ButtonBackground_1.yy",
+    "name":"ButtonBackground",
+    "path":"sprites/ButtonBackground/ButtonBackground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

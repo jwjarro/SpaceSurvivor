@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"MenuBackground",
+  "%Name":"ButtonBackground",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":0,
@@ -21,18 +21,18 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"98e78ad6-85f4-4064-a49f-2c80806d46a4","blendMode":0,"displayName":"default","isLocked":false,"name":"98e78ad6-85f4-4064-a49f-2c80806d46a4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"MenuBackground",
+  "name":"ButtonBackground",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":16,
+    "bottom":12,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":16,
+    "left":12,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":16,
+    "right":12,
     "tileMode":[
       0,
       0,
@@ -40,7 +40,7 @@
       0,
       0,
     ],
-    "top":16,
+    "top":12,
   },
   "origin":4,
   "parent":{
@@ -52,7 +52,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"MenuBackground",
+    "%Name":"ButtonBackground",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"MenuBackground",
+    "name":"ButtonBackground",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -90,7 +90,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a8168642-0f35-4d23-9c17-b5eed6ef8d38","path":"sprites/MenuBackground/MenuBackground.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a8168642-0f35-4d23-9c17-b5eed6ef8d38","path":"sprites/ButtonBackground/ButtonBackground.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"857df1b7-cb55-4cc8-b261-0b6a3883908e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
