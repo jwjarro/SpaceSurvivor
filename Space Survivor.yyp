@@ -38,6 +38,7 @@
   "name":"Space Survivor",
   "resources":[
     {"id":{"name":"AnimationCurve1","path":"animcurves/AnimationCurve1/AnimationCurve1.yy",},},
+    {"id":{"name":"Font1_upgrades","path":"fonts/Font1_upgrades/Font1_upgrades.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},},
     {"id":{"name":"Button","path":"objects/Button/Button.yy",},},
@@ -57,6 +58,7 @@
     {"id":{"name":"splash_screen","path":"rooms/splash_screen/splash_screen.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Gamepad_Vars","path":"scripts/Gamepad_Vars/Gamepad_Vars.yy",},},
+    {"id":{"name":"Upgrade_Data","path":"scripts/Upgrade_Data/Upgrade_Data.yy",},},
     {"id":{"name":"SplashScreenSequence","path":"sequences/SplashScreenSequence/SplashScreenSequence.yy",},},
     {"id":{"name":"CountdownSFX","path":"sounds/CountdownSFX/CountdownSFX.yy",},},
     {"id":{"name":"HighEnergySolarExpedition","path":"sounds/HighEnergySolarExpedition/HighEnergySolarExpedition.yy",},},

@@ -25,7 +25,7 @@ alarm[0] = enemyControlInterval;
     
     //Wave setup
         waveData = [ //Format: [Length (seconds), #UFOs, #Carriers],
-        [10, 0, 0],
+        [5, 0, 0],
         [30, 1, 0],
         [30, 0, 1]
         ]
@@ -43,7 +43,7 @@ alarm[0] = enemyControlInterval;
 
     //Level setup
         global.levelData = [
-            10, 10, 10
+            1, 10, 10, 10
         ]
      
 //Debug

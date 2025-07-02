@@ -1,1 +1,1 @@
-PauseController.executePauseScreenButton(button_name);
+global.upgradeData[button_number-1].code();
