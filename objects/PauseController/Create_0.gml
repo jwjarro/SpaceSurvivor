@@ -65,6 +65,8 @@ executePauseScreenButton = function(button_name)
 	showUpgradeScreen = function()
 	{
 		global.upgrading  = true;
+		
+		array_shuffle_ext(global.upgradeData);
 	
 		instance_deactivate_all(true);
 		window_set_cursor(cr_default);
