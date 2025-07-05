@@ -35,12 +35,15 @@ draw_healthbar
 //Debug tools
 if (global.showDebug)
 {
-    //Debug printing function initialization
+    //Set font
+		draw_set_font(Font1_debug);
+	
+	//Debug printing function initialization
         lineNum = 0;
     
         printDebugLine = function(text = "", indent = 0)
         {
-            draw_text_ext_transformed(50 + 25 * indent, 50 + 25 * lineNum, text, 0, 500, 2, 2, 0);
+            draw_text_ext_transformed(50 + 25 * indent, 60 + 30 * lineNum, text, 0, 500, 2, 2, 0);
             lineNum ++;
         }
     
@@ -54,13 +57,13 @@ if (global.showDebug)
             printDebugLine("Instances loaded: " + string(instance_count), 1);
     
             //Number of enemies loaded
-            printDebugLine("Enemies loaded: " + string(instance_number(Enemy_Parent)), 1);
+            printDebugLine("Enemies loaded:    " + string(instance_number(Enemy_Parent)), 1);
         
             //Number of bullets loaded
-            printDebugLine("Bullets:        " + string(instance_number(Bullet) + instance_number(EnemyBullet)), 1);
+            printDebugLine("Bullets:                " + string(instance_number(Bullet) + instance_number(EnemyBullet)), 1);
     
             //Number of xp loaded
-            printDebugLine("XP:             " + string(instance_number(XP)), 1);
+            printDebugLine("XP:                       " + string(instance_number(XP)), 1);
         
         //Player stats
             //Label

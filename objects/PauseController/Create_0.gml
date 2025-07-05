@@ -37,6 +37,8 @@ updatePause = function()
 
 updatePause();
 
+
+//Pause screen button functionality
 executePauseScreenButton = function(button_name)
 {
     switch(button_name)
@@ -59,15 +61,25 @@ executePauseScreenButton = function(button_name)
     }
 }
 
-showUpgradeScreen = function()
-{
-	global.upgrading  = true;
+//Upgrade screen show/hide
+	showUpgradeScreen = function()
+	{
+		global.upgrading  = true;
 	
-	instance_deactivate_all(true);
-	window_set_cursor(cr_default);
-	layer_set_visible(upgradeLayer, true);
+		instance_deactivate_all(true);
+		window_set_cursor(cr_default);
+		layer_set_visible(upgradeLayer, true);
+	}
+
+	hideUpgradeScreen = function()
+	{
+		global.upgrading  = false;
 	
-	
-}
+		instance_activate_all();
+		window_set_cursor(cr_none);
+		layer_set_visible(upgradeLayer, false);
+	}
+
+
 
 layer_set_visible(settingsLayer, false);

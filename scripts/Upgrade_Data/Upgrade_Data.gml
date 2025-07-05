@@ -16,5 +16,5 @@ global.upgradeData =
 		name: "Armor Plating",
 		description: "2x Max Health",
 		code: function() {Player.maxHealth *= 2}
-	},
+	}
 ]

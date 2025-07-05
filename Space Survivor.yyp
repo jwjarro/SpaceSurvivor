@@ -38,6 +38,7 @@
   "name":"Space Survivor",
   "resources":[
     {"id":{"name":"AnimationCurve1","path":"animcurves/AnimationCurve1/AnimationCurve1.yy",},},
+    {"id":{"name":"Font1_debug","path":"fonts/Font1_debug/Font1_debug.yy",},},
     {"id":{"name":"Font1_upgrades","path":"fonts/Font1_upgrades/Font1_upgrades.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},},

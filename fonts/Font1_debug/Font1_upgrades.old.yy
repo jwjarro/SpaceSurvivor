@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Font1",
+  "%Name":"Font1_1",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":54,
@@ -118,10 +118,10 @@
   "last":0,
   "lineHeight":48,
   "maintainGms1Font":false,
-  "name":"Font1",
+  "name":"Font1_1",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "pointRounding":0,
   "ranges":[
