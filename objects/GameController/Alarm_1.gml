@@ -11,6 +11,9 @@ for(i = 1; i < array_length(waveData[currentWave]); i ++)
             case 2:
                 spawnEnemy(Carrier);
                 break;
+			 case 3:
+                spawnEnemy(Gripper);
+                break;
         }
     }
 }
