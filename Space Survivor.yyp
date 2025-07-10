@@ -74,6 +74,7 @@
     {"id":{"name":"CheckedBox","path":"sprites/CheckedBox/CheckedBox.yy",},},
     {"id":{"name":"EmptySprite","path":"sprites/EmptySprite/EmptySprite.yy",},},
     {"id":{"name":"EneemyBulletSprite","path":"sprites/EneemyBulletSprite/EneemyBulletSprite.yy",},},
+    {"id":{"name":"GripperBeamSprite","path":"sprites/GripperBeamSprite/GripperBeamSprite.yy",},},
     {"id":{"name":"GripperSprite","path":"sprites/GripperSprite/GripperSprite.yy",},},
     {"id":{"name":"MagmaBullet","path":"sprites/MagmaBullet/MagmaBullet.yy",},},
     {"id":{"name":"MenuBackground","path":"sprites/MenuBackground/MenuBackground.yy",},},

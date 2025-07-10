@@ -25,7 +25,7 @@ with(Enemy_Parent)
     }
     
     
-    depth = -y;
+    //depth = -y;
 }
 
 //Enemy loading/unloading
